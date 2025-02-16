@@ -16,4 +16,21 @@ public class DecimalNumConverter {
         }
         return result.length() == 0 ? "0" : result.reverse().toString();
     }
+
+     // Метод для преобразования числа из другой системы счисления в десятичное
+    public static int convertFromBase(String number, int base) {
+        int result = 0;
+        number = number.toUpperCase();     
+        for (char c : number.toCharArray()) {
+            if(!Character.isDigit(c)){
+                int digit = c - 'A' + 10;
+                result = result * base + digit;
+            }else{
+                int digit = Integer.parseInt(String.valueOf(c));
+                result = result * base + digit; 
+            }
+            
+        }
+        return result;
+    }
 }
