@@ -2,7 +2,6 @@ package com.esstu.java_from_epam.Task3;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class QuadraticEquation {
     private double a;

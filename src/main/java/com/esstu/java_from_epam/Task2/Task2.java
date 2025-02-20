@@ -1,5 +1,4 @@
 package com.esstu.java_from_epam.Task2;
-import com.esstu.java_from_epam.Task2.DecimalNumConverter;
 import java.util.Scanner;
 /* 
     Вариант 15 (Часть Б, Задание 6) 
